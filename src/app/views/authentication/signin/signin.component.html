@@ -1,0 +1,48 @@
+<section class="row section-main">
+    <div class="div-blue col-xl-7 col-lg-7 col-md-7 col-sm-7"></div>
+
+    <div class="div-white col-xl-5 col-lg-5 col-md-5 col-sm-5">
+        <div class="container-login">
+            <div style="width: 65%; margin: auto;">
+                <div class="logo">
+                    LOGO AQUI
+                </div>
+                <mat-form-field class="form-field" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input
+                        matInput
+                        type="email"
+                        [formControl]="emailFormControl"
+                        placeholder="Digite seu email"
+                        required
+                    />
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        Email é obrigatório.
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="form-field" appearance="fill">
+                    <mat-label>Senha</mat-label>
+                    <input
+                        matInput
+                        type="password"
+                        [formControl]="passwordFormControl"
+                        placeholder="Digite sua senha"
+                        required
+                    />
+                    <mat-error *ngIf="passwordFormControl.hasError('required')">
+                        Senha é obrigatória.
+                    </mat-error>
+                </mat-form-field>
+
+                <button class="btn btn-entrar" (click)="login()">
+                    Entrar
+                </button>
+
+                <div class="div-link-esqueci-senha">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
