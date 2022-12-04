@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class FindPatientComponent implements OnInit {
 
-  emailFormControl: FormControl = new FormControl('');
+    cpfFormControl: FormControl = new FormControl('');
 
   constructor(
     private router: Router
@@ -18,9 +18,6 @@ export class FindPatientComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login() {
-    this.router.navigate(['/new-patient']);
-  }
 
 
 }
