@@ -1,0 +1,65 @@
+.section-main {
+    width: 100%;
+}
+
+.form-field {
+    width: 40%;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.title-top {
+    line-height: 48px;
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Archivo';
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.text-patient {
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    font-family: 'Archivo';
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto 36px auto;
+    max-height: 200px;
+    width: 234.32px;
+}
+
+.btn-find-patient {
+    width: 40%;
+    text-align: center;
+    background-color: #4333FF;
+    color: #F5F5F5;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 16px;
+    height: 48px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.div-link-cadastrar-novo {
+    text-align: center;
+}
+
+.div-link-cadastrar-novo {
+    a {
+        font-family: 'Archivo';
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 16px;
+        color: #4333FF;
+    }
+}

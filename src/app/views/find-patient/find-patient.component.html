@@ -1,1 +1,40 @@
-<p>find-patient works!</p>
+<section class="section-main">
+    
+    <div style="width: 65%; margin: auto;">
+        <div>
+            <img src="../../../assets/images/patient.png" class="center-image">
+        </div>
+        
+        <div class="title-top">
+            Encontre o <br>
+            seu paciente
+        </div>
+
+        <div class="text-patient">
+            Digite abaixo o número do CPF do paciente <br>
+            que deseja encontrar em nosso sistema
+        </div>
+    
+        <mat-form-field class="form-field" appearance="fill">
+            <mat-label>CPF do paciente</mat-label>
+            <input
+                matInput
+                type="text"
+                [formControl]="cpfFormControl"
+                placeholder="000.000.000-00"
+                required
+            />
+            <mat-error *ngIf="cpfFormControl.hasError('required')">
+                Campo obrigatório
+            </mat-error>
+        </mat-form-field>
+    
+        <button class="btn btn-find-patient">
+            Buscar paciente
+        </button>
+    
+        <div class="div-link-cadastrar-novo">
+            <a href="#">Cadastrar novo paciente</a>
+        </div>
+    </div>
+</section>
