@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { FindPatientRoutingModule } from './find-patient-routing.module';
 import { FindPatientComponent } from './find-patient.component';
+import { LayoutModule } from 'src/app/shared/layout/layout.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FindPatientComponent } from './find-patient.component';
     ReactiveFormsModule,
     FormsModule,
     MatFormFieldModule,
+    LayoutModule
   ]
 })
 export class FindPatientModule { }
