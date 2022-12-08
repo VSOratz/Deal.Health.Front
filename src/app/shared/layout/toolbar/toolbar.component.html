@@ -1,0 +1,68 @@
+<mat-toolbar class="toolbar-style">
+    <button
+        mat-icon-button
+        class="example-icon btn-menu"
+        aria-label="Example icon-button with menu icon"
+        (click)="open(content)"
+    >
+        <mat-icon class="icon-menu-style">menu</mat-icon>
+    </button>
+    <span class="logo-text">LOGO</span>
+    <span class="example-spacer"></span>
+    <span class="text-user">Olá, Aurélio!</span>
+    <button
+        mat-icon-button
+        class="example-icon btn-menu"
+        aria-label="Example icon-button with share icon"
+    >
+        <mat-icon style="scale: 1.75;">account_circle</mat-icon>
+    </button>
+</mat-toolbar>
+
+<ng-template #content let-offcanvas class="style-sidebar">
+	<div class="offcanvas-header div-title-sidebar">
+		<h4 class="offcanvas-title title-sidebar" id="offcanvas-basic-title">
+            LOGO AQUI
+        </h4>
+	</div>
+    <!-- <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button> -->
+	<div class="offcanvas-body body-sidebar">
+
+        <div class="option-menu option-menu-active">
+            <div style="display: flex;">
+                <mat-icon>assignment</mat-icon>
+                <span style="margin-top: 3px; margin-left: 10px;">
+                    Pacientes
+                </span>
+            </div>
+        </div>
+
+        <div class="option-menu">
+            <div style="display: flex">
+                <mat-icon>assignment</mat-icon>
+                <span style="margin-top: 3px; margin-left: 10px;">
+                    Consultas
+                </span>
+            </div>
+        </div>
+
+        <div class="option-menu">
+            <div style="display: flex">
+                <mat-icon>assignment</mat-icon>
+                <span style="margin-top: 3px; margin-left: 10px;">
+                    Triagem
+                </span>
+            </div>
+        </div>
+
+        <div class="option-menu">
+            <div style="display: flex">
+                <mat-icon>assignment</mat-icon>
+                <span style="margin-top: 3px; margin-left: 10px;">
+                    Exames
+                </span>
+            </div>
+        </div>
+
+	</div>
+</ng-template>

@@ -9,19 +9,19 @@ import { FindPatientModule } from './views/find-patient/find-patient.module';
 import { NewPatientModule } from './views/new-patient/new-patient.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    NgbModule,
-    AuthenticationModule,
-    FindPatientModule,
-    NewPatientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        NgbModule,
+        AuthenticationModule,
+        FindPatientModule,
+        NewPatientModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
