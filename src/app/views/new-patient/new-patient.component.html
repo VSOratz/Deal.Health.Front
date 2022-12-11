@@ -166,7 +166,103 @@
 
             </mat-tab>
             <mat-tab label="Endereço">
-    
+                <div class="header-tab">
+                    Endereço
+                </div>
+
+                <div class="row" style="margin-top: 30px; width: 100%;">
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-input">
+                        <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                            <mat-label>CEP</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                [formControl]="cep"
+                                placeholder="Seu CEP aqui"
+                                required
+                            />
+                            <mat-error *ngIf="nome.hasError('required')">
+                                CEP é obrigatório.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-input">
+                        <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                            <mat-label>Rua</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                [formControl]="rua"
+                                placeholder="000.000.000-00"
+                                required
+                            />
+                            <mat-error *ngIf="cpf.hasError('required')">
+                                Campo rua é obrigatório.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-input">
+                        <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                            <mat-label>Número</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                [formControl]="numero"
+                                placeholder="000.000.000-00"
+                                required
+                            />
+                            <mat-error *ngIf="susId.hasError('required')">
+                                Numeração é obrigatória.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-input">
+                        <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                            <mat-label>Bairro</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                [formControl]="bairro"
+                                required
+                            />
+                            <mat-error *ngIf="sexo.hasError('required')">
+                                Campo bairro é obrigatório.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-input">
+                        <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                            <mat-label>Complemento</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                [formControl]="complemento"
+                            />
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 div-input">
+                        <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                            <mat-label>Cidade</mat-label>
+                            <input
+                                matInput
+                                type="text"
+                                [formControl]="cidade"
+                                required
+                            />
+                            <mat-error *ngIf="estadoCivil.hasError('required')">
+                                Cidade é obrigatória.
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+
             </mat-tab>
     
         </mat-tab-group>
