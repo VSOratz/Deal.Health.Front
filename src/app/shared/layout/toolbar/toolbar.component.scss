@@ -19,7 +19,7 @@
 }
 
 .logo-text {
-    color: #4333FF;
+    color: #00995C;
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 700;
@@ -56,7 +56,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    color: #4333FF;
+    color: #00995C;
 }
 
 .body-sidebar {
@@ -80,27 +80,31 @@
 
 .option-menu:hover {
     scale: 1.02;
-    background-color: #ECEBFF;
+    background-color: #EBFFF7;
 
     mat-icon {
-        color: #4333FF;
+        color: #00995C;
     }
 
     span {
-        color: #080066;
+        color: #00663D;
     }
 }
 
 .option-menu-active {
-    background-color: #ECEBFF;
-    border-left: 4px solid #4333FF;
+    background-color: #EBFFF7;
+    border-left: 4px solid #00995C;
 
     mat-icon {
-        color: #4333FF;
+        color: #00995C;
     }
 
     span {
-        color: #080066;
+        color: #00663D;
     }
+}
+
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background-color: #00995C;
 }
 
