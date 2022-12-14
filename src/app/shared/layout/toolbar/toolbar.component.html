@@ -7,7 +7,7 @@
     >
         <mat-icon class="icon-menu-style">menu</mat-icon>
     </button>
-    <span class="logo-text">LOGO</span>
+    <span class="logo-text">HealthXpert</span>
     <span class="example-spacer"></span>
     <span class="text-user">Olá, Aurélio!</span>
     <button
@@ -20,13 +20,13 @@
 </mat-toolbar>
 
 <ng-template #content let-offcanvas class="style-sidebar">
-	<div class="offcanvas-header div-title-sidebar">
-		<h4 class="offcanvas-title title-sidebar" id="offcanvas-basic-title">
-            LOGO AQUI
+    <div class="offcanvas-header div-title-sidebar">
+        <h4 class="offcanvas-title title-sidebar" id="offcanvas-basic-title">
+            HealthXpert
         </h4>
-	</div>
+    </div>
     <!-- <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button> -->
-	<div class="offcanvas-body body-sidebar">
+    <div class="offcanvas-body body-sidebar">
 
         <div [ngClass]="menuPacienteAtivo ? 'option-menu-active' : 'option-menu'" (click)="direcionarTelaPacientes()" (click)="offcanvas.dismiss('Cross click')">
             <div style="display: flex;">
@@ -64,5 +64,5 @@
             </div>
         </div>
 
-	</div>
+    </div>
 </ng-template>
