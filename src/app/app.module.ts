@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthenticationModule } from './views/authentication/authentication.module';
 import { FindPatientModule } from './views/find-patient/find-patient.module';
 import { NewPatientModule } from './views/new-patient/new-patient.module';
+import { TriagemModule } from './views/triagem/triagem.module';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import { NewPatientModule } from './views/new-patient/new-patient.module';
         NgbModule,
         AuthenticationModule,
         FindPatientModule,
-        NewPatientModule
+        NewPatientModule,
+        TriagemModule
     ],
     providers: [],
     bootstrap: [AppComponent]

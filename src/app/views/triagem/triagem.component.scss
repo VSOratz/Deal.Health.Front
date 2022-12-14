@@ -1,0 +1,163 @@
+.section-main {
+    background-color: #F5F5F5;
+    height: 100%;
+}
+
+.row-map {
+    margin-top: 24px;
+}
+
+.list-map {
+    padding-left: 46px;
+
+    mat-icon {
+        color: #00995C;
+    }
+}
+
+.titulo {
+    padding-top: 3px;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.container-triagem {
+    margin-top: 25px;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+table {
+    width: 100%;
+
+}
+::ng-deep .mat-table {
+    background: #F5F5F5;
+}
+
+::ng-deep .mat-elevation-z8 {
+    box-shadow: none;
+}
+
+::ng-deep th.mat-header-cell {
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 16px;
+    color: #292929;
+}
+
+::ng-deep .mat-cell, .mat-footer-cell {
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 14px;
+    color: #292929;
+}
+
+.badge-urgencia {
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 32px;
+}
+
+.badge-urgencia-emergencia {
+    color: #fff;
+    background: #E91E63;
+}
+
+.badge-urgencia-mto-urgente {
+    color: #000;
+    background: #FFAD33;
+}
+
+.badge-urgencia-urgente {
+    color: #000;
+    background: #FFD953;
+}
+
+.badge-urgencia-pouco-urgente {
+    color: #fff;
+    background: #049A3D;
+}
+
+.badge-urgencia-nao-urgente {
+    color: #fff;
+    background: #019EDB;
+}
+
+.badge-status {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    background: #F5F5F5;
+}
+
+.badge-status-atendido {
+    color: #049A3D;
+    border: 1.5px solid #049A3D;
+    border-radius: 32px;
+}
+.badge-status-em-atendimento {
+    color: #019EDB;
+    border: 1.5px solid #019EDB;
+    border-radius: 32px;
+}
+.badge-status-nao-atendido {
+    color: #E91E63;
+    border: 1.5px solid #E91E63;
+    border-radius: 32px;
+}
+
+.btn-eye {
+    cursor: pointer;
+}
+
+::ng-deep .offcanvas.offcanvas-end {
+    width: 732px;
+    padding: 16px 36px;
+    background-color: #F5F5F5;
+}
+
+.titulo-modal-triagem {
+    margin-top: 12px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.divs-modal-triagem {
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+.container-modal-triagem {
+    margin-top: 10px;
+}
+
+.div-inputs-modal-triagem {
+    margin-bottom: 10px;
+}
+
+.btn-concluir-triagem {
+    background-color: #00995C;
+    color: #fff;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+}
+
+.btn-cancelar-triagem {
+    background-color: #F5F5F5;
+    color: #00995C;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+    border: 1.5px solid #00995C;
+}
