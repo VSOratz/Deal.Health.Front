@@ -92,14 +92,21 @@
 }
 
 .option-menu-active {
+    cursor: pointer;
+    height: 72px;
+    width: 100%;
+    padding: 25px 0 25px 32px;
+
     background-color: #EBFFF7;
     border-left: 4px solid #00995C;
 
     mat-icon {
+        padding-right: 10px;
         color: #00995C;
     }
 
     span {
+        font-size: 20px;
         color: #00663D;
     }
 }

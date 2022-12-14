@@ -40,3 +40,30 @@
 .div-input {
     margin-bottom: 30px;
 }
+
+.btn-excluir-paciente {
+    background-color: #f5f5f5;
+    color: #E91E63;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+}
+.btn-concluir-cadastro {
+    background-color: #00995C;
+    color: #fff;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+}
+
+.btn-cancelar-cadastro {
+    background-color: #F5F5F5;
+    color: #00995C;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 32px;
+    border: 1.5px solid #00995C;
+}

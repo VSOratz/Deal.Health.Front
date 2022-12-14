@@ -28,7 +28,7 @@
     <!-- <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button> -->
 	<div class="offcanvas-body body-sidebar">
 
-        <div class="option-menu option-menu-active">
+        <div [ngClass]="menuPacienteAtivo ? 'option-menu-active' : 'option-menu'" (click)="direcionarTelaPacientes()" (click)="offcanvas.dismiss('Cross click')">
             <div style="display: flex;">
                 <mat-icon>assignment</mat-icon>
                 <span style="margin-top: 3px; margin-left: 10px;">
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="option-menu">
+        <div [ngClass]="menuConsultasAtivo ? 'option-menu-active' : 'option-menu'" (click)="direcionarTelaConsultas()" (click)="offcanvas.dismiss('Cross click')">
             <div style="display: flex">
                 <mat-icon>assignment</mat-icon>
                 <span style="margin-top: 3px; margin-left: 10px;">
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <div class="option-menu">
+        <div [ngClass]="menuTriagemAtivo ? 'option-menu-active' : 'option-menu'" (click)="direcionarTelaTriagem()" (click)="offcanvas.dismiss('Cross click')">
             <div style="display: flex">
                 <mat-icon>assignment</mat-icon>
                 <span style="margin-top: 3px; margin-left: 10px;">
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div class="option-menu">
+        <div [ngClass]="menuExameAtivo ? 'option-menu-active' : 'option-menu'" (click)="direcionarTelaExames()" (click)="offcanvas.dismiss('Cross click')">
             <div style="display: flex">
                 <mat-icon>assignment</mat-icon>
                 <span style="margin-top: 3px; margin-left: 10px;">
