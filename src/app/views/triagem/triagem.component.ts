@@ -1,20 +1,9 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { TabelaTriagemModel } from 'src/app/shared/models/tabelaTriagemModel.model';
 
-export interface TabelaTriagemModel {
-    urgencia: string,
-    nome: string,
-    idade: string,
-    pressao: string,
-    temperatura: string,
-    oximetro: string,
-    peso: string,
-    altura: string,
-    dataHora: string,
-    status: string,
-    acao: any
-}
+
 
 const MOCK_DATA: TabelaTriagemModel[] = [
     {
@@ -79,7 +68,7 @@ const MOCK_DATA: TabelaTriagemModel[] = [
         peso: '-',
         altura: '-',
         dataHora: '30/11/2022 às 13h',
-        status: 'Não atendido',
+        status: 'Aguardando',
         acao: '-'
     },
     {
@@ -92,7 +81,7 @@ const MOCK_DATA: TabelaTriagemModel[] = [
         peso: '-',
         altura: '-',
         dataHora: '30/11/2022 às 13h',
-        status: 'Não atendido',
+        status: 'Aguardando',
         acao: '-'
     },
 ];
@@ -137,7 +126,7 @@ export class TriagemComponent implements OnInit {
         this.listaStatus = [
             'Atendido',
             'Em atendimento',
-            'Não atendido'
+            'Aguardando'
         ];
 
         this.idade = new FormControl('')

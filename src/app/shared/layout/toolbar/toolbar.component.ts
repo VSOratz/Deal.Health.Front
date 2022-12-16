@@ -96,6 +96,7 @@ export class ToolbarComponent implements OnInit {
         this.menuConsultasAtivo = true;
         this.menuTriagemAtivo = false;
         this.menuExameAtivo = false;
+        this.router.navigate(['consulta']);
         this.getDismissReason(OffcanvasDismissReasons.BACKDROP_CLICK)
     }
 
