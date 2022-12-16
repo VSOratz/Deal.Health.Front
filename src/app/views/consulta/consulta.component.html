@@ -1,0 +1,145 @@
+<section class="section-main">
+    <app-toolbar></app-toolbar>
+
+    <div class="row row-map" style="width: 100%;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <ul class="breadcrumb breadcrumb-style list-map">
+                <li class="breadcrumb-item">
+                    <mat-icon>home</mat-icon>
+                </li>
+                <li class="breadcrumb-item bcrumb-1 titulo">
+                    Consultas
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="container-consulta">
+        <div class="row">
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <mat-form-field appearance="fill" style="width: 100%;">
+                    <mat-label>Data</mat-label>
+                    <input
+                        matInput
+                        [matDatepicker]="picker"
+                        readonly
+                        required
+                    />
+                    <mat-datepicker-toggle
+                        matSuffix
+                        [for]="picker">
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <mat-form-field appearance="fill" style="width: 100%;">
+                    <mat-label>Urgência</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let urgencia of listaUrgencia" [value]="urgencia">
+                            {{urgencia}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <mat-form-field appearance="fill" style="width: 100%;">
+                    <mat-label>Status</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let status of listaStatus" [value]="status">
+                            {{status}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <mat-form-field class="form-field" appearance="fill" style="width: 100%;">
+                    <mat-label>Digite aqui o CPF ou nome do paciente</mat-label>
+                    <input
+                        matInput
+                        type="text"
+                        placeholder="000.000.000-00"
+                    />
+                </mat-form-field>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="urgencia">
+                        <th mat-header-cell *matHeaderCellDef> Urgência</th>
+                        <td mat-cell *matCellDef="let element">
+                            <span class="badge badge-pill badge-urgencia" 
+                                [ngClass]="defineUrgenciaColor(element.urgencia)">
+                                {{element.urgencia}} 
+                            </span> 
+                        </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="id">
+                      <th mat-header-cell *matHeaderCellDef> ID </th>
+                      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="nome">
+                      <th mat-header-cell *matHeaderCellDef> Nome </th>
+                      <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="idade">
+                      <th mat-header-cell *matHeaderCellDef> Idade </th>
+                      <td mat-cell *matCellDef="let element"> {{element.idade}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="endereco">
+                      <th mat-header-cell *matHeaderCellDef> Endereço </th>
+                      <td mat-cell *matCellDef="let element"> {{element.endereco}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="cidade">
+                      <th mat-header-cell *matHeaderCellDef> Cidade </th>
+                      <td mat-cell *matCellDef="let element"> {{element.cidade}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="estado">
+                      <th mat-header-cell *matHeaderCellDef> Estado </th>
+                      <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="dataAtendimento">
+                      <th mat-header-cell *matHeaderCellDef> Data do atendimento </th>
+                      <td mat-cell *matCellDef="let element"> {{element.dataAtendimento}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="status">
+                      <th mat-header-cell *matHeaderCellDef> Status </th>
+                      <td mat-cell *matCellDef="let element">
+                        <span class="badge badge-pill badge-status" 
+                            [ngClass]="defineStatusColor(element.status)">
+                            {{element.status}} 
+                        </span> 
+                    </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="acao">
+                      <th mat-header-cell *matHeaderCellDef> Ação </th>
+                      <td mat-cell *matCellDef="let element" class="btn-eye" > <mat-icon>remove_red_eye</mat-icon> </td>
+                    </ng-container>
+                  
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+
+</section>

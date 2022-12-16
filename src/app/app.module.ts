@@ -8,6 +8,7 @@ import { AuthenticationModule } from './views/authentication/authentication.modu
 import { FindPatientModule } from './views/find-patient/find-patient.module';
 import { NewPatientModule } from './views/new-patient/new-patient.module';
 import { TriagemModule } from './views/triagem/triagem.module';
+import { ConsultaModule } from './views/consulta/consulta.module';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { TriagemModule } from './views/triagem/triagem.module';
         AuthenticationModule,
         FindPatientModule,
         NewPatientModule,
-        TriagemModule
+        TriagemModule,
+        ConsultaModule
     ],
     providers: [],
     bootstrap: [AppComponent]
